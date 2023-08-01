@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&display=swap');
+
+.grid-container {
+    display: grid;
+    grid-template: 35px 250px 200px 300px/repeat(3, 1fr);
+    gap: 25px;
+    margin: 20px 10%;
+}
+
+img {
+    width: 100%;
+}
+
+#navbar {
+    grid-area: 1/1/2/4;
+}
+
+#grid-item-image {
+    grid-area: 2/1/3/3;
+}
+
+#grid-item-articles {
+    grid-area: 2/3/4/4;
+    background-color: hsl(240, 100%, 5%);
+    padding: 3% 7%;
+}
+
+#grid-item-future {
+    grid-area: 3/1/4/2;
+}
+
+#grid-item-web3 {
+    grid-area: 3/2/4/3;
+}
+
+.articles-new {
+    color: hsl(35, 77%, 62%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+.article h3 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+.article p {
+    color: hsl(233, 8%, 79%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Partie web3 et bright future  */
+.web3-button {
+    margin-left: 40px;
+    width: 45%;
+    height: 40px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    transition: background-color 1s, border-radius 1s;
+}
+
+.web3-paragraph {
+    margin: 51px;
+    color: hsl(236, 13%, 42%);
+}
+
+.future-title {
+    margin: 55px 0 0 0;
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*mini articles */
+.flex-container {
+    display: flex;
+}
+
+#mini-image {
+    margin-top: 60px;
+    width: 30%;
+    margin-right: 19px;
+}
+
+.mini-article h2 {
+    margin-top: 0;
+    color: hsl(236, 13%, 42%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+.mini-article h3 {
+    margin-bottom: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+.mini-article p {
+    color: hsl(236, 13%, 42%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    width: 50px;
+}
+
+.navbar-tabs {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar-tabs a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Pseudo-classes  */
+.web3-button:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    border-radius: 25px;
+}
